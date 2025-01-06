@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE SKY CARAVAN</title>
+    <style>
+        /* الأساسيات */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            direction: rtl;
+        }
+
+        /* الرأس */
+        header {
+            background-image: linear-gradient(to right, #00796b, #004d40);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* القوائم */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #004d40;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #00796b;
+        }
+
+        /* الأقسام */
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #00796b;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        /* القوائم */
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+        .list li {
+            background: #e0f7fa;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        /* الأزرار */
+        button, a.button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 1.1rem;
+            text-align: center;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        button:hover, a.button:hover {
+            background-color: #004d40;
+        }
+
+        /* الملاحظات الصغيرة */
+        .note {
+            text-align: center;
+            font-style: italic;
+            color: gray;
+        }
+
+        /* الخريطة */
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> THE SKY CARAVAN</h1>
+</header>
+
+<nav>
+    <a href="#details">المرافق</a>
+    <a href="#services">الخدمات</a>
+    <a href="#pricing">الأسعار</a>
+    <a href="#booking">للحجز</a>
+    <a href="#location">الموقع</a>
+</nav>
+
+<section id="welcome">
+    <h2>مرحبا بكم</h2>
+    <p>استمتع بإطلالات بحرية بانورامية فاخرة وتجربة استجمام لا تُنسى في أجواء هادئة ومفعمة بالفخامة، في THE SKY  نمنحك لحظات استثنائية مليئة بالسلام والانتعاش.
+
+</p>
+</section>
+
+<section id="details">
+    <h2>تفاصيل الكرفان والموقع</h2>
+    <ul class="list">
+        <li>غرف نوم فندقية فاخرة</li>
+        <li>مطبخ متكامل مجهز بطباخة ومايكرويف وثلاجة</li>
+        <li>دورة مياه واسعة جدا ومريحة</li>
+        <li>بروجكتر سينمائي </li>
+        <li>واي فاي عالي السرعة</li>
+        <li>جلسة واسعة مظللة </li>
+       <li>جلسة شتوية سمرة وحطب </li>
+        <li>جلسة تأمل وإسترخاء</li>
+       <li>منطقة شواء مجهزة بكافة الخدمات</li>
+        <li>العاب خارجية متنوعة</li>
+        <li>مواقف خارجية خاصة ومنظمة</li>
+        <li>إطلالة بحرية بانورامية ساحرة</li>
+    </ul>
+</section>
+
+<section id="services">
+    <h2>الخدمات</h2>
+    <ul class="list">
+        <li>إنترنت مجاني</li>
+        <li>خدمة تنظيف يومية</li>
+       <li>جلسات خارجية متنوعة</li>
+        <li>مرافق حديثة وواسعة</li>
+        <li>مواقف سيارات مجانية</li>
+        <li>دعم العملاء على مدار الساعة</li>
+    </ul>
+</section>
+
+<section id="pricing">
+    <h2>التواقيت</h2>
+    <ul class="list">
+        <li> 04:00 - 12:00  بدون مبيت / الرابعة عصرًا حتى الثانية عشر منتصف الليل</li>
+ <li> 04:00 - 12:00  مع المبيت / الربعة عصرًا حتى الثاني عشر ظهر اليوم التالي</        
+    </ul>
+</section>
+
+<section id="pricing">
+    <ul class="list">
+      <h2>أيام الاسبوع من الاحد حتى الاربعاء<h2>
+      <li>40 ريال عماني / بدون مبيت </li>
+        <li>55 ريال عماني /  مع المبيت </li>
+
+         <h2>الاجازات الاعتيادية من الخميس الى السبت<h2>
+      <li>50 ريال عماني / بدون مبيت </li>
+        <li>65 ريال عماني /  مع المبيت </li>
+
+         <h2>الاجازات الدينية والوطنية والاستثنائية<h2>
+      <li>60 ريال عماني / بدون مبيت </li>
+        <li>75 ريال عماني /  مع المبيت </li>
+
+
+ملاحظة : مبلغ التأمين لكل حجز  20 ريال مسترجع.
+
+    </ul>
+</section>
+
+<section id="booking">
+    <h2>الحجز</h2>
+    <p>سيتم توجيهك الى رقم الواتساب مباشرة :</p>
+    <form action="https://wa.me/96664326" method="GET" target="_blank">
+        <button type="submit">WhatsApp</button>
+    </form>
+</section>
+
+<section id="location">
+    <h2>الموقع الجغرافي</h2>
+    <p>المنومة - شاطيء النسيم - خلف حديقة النسيم مباشرة:</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d695.6333103524513!2d58.021092639785785!3d23.712882572219467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8de9406a27a219%3A0x41d2d21362493d00!2sThe%20sky%20caravan!5e1!3m2!1sar!2som!4v1735830581156!5m2!1sar!2som" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<footer>
+    <p>جميع الحقوق محفوظة © 2025 THE SKY CARAVAN</p>
+</footer>
+
+</body>
+</html>
